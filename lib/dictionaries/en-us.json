@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "programs": "Programs", 
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform Your Body, Transform Your Life",
+    "subtitle": "Join our fitness community and achieve your goals",
+    "ctaText": "Get Started Today",
+    "secondaryCtaText": "Learn More"
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "Your success is our priority"
+  },
+  "achievements": {
+    "title": "Your Success Stories",
+    "subtitle": "Real results from real people"
+  },
+  "challenge": {
+    "title": "30-Day Transformation Challenge",
+    "description": "Ready to see real results? Join our proven 30-day program.",
+    "ctaText": "Start Your Challenge"
+  },
+  "coach": {
+    "title": "Meet Your Coach",
+    "subtitle": "Expert guidance every step of the way"
+  },
+  "stats": {
+    "title": "Proven Results",
+    "clients": "Happy Clients",
+    "experience": "Years Experience", 
+    "success": "Success Rate",
+    "programs": "Programs"
+  },
+  "valueProposition": {
+    "title": "Your Fitness Journey Starts Here",
+    "subtitle": "Personalized approach to your fitness goals"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive fitness solutions"
+  },
+  "programs": {
+    "title": "Fitness Programs",
+    "subtitle": "Choose the program that fits your lifestyle",
+    "ctaText": "View All Programs"
+  },
+  "testimonials": {
+    "title": "Success Stories",
+    "ctaText": "Read More Stories"
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Flexible options for every budget"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "Helping you achieve lasting transformation"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "contactTitle": "Still have questions?"
+  },
+  "footer": {
+    "copyright": "© 2024 AO Fit. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us"
+    }
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "contact": "Contact",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success!"
+  },
+  "language": {
+    "switchTo": "Switch to",
+    "english": "English",
+    "ukrainian": "Ukrainian"
+  }
+}

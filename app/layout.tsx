@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
-import { Providers } from './providers'
-import { Navigation } from '@/components/Navigation'
 
 const inter = Inter({
   variable: '--font-sans',
@@ -51,14 +49,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body
         className={`${inter.variable} ${playfair.variable} font-sans antialiased min-h-screen bg-background`}
+        suppressHydrationWarning
       >
-        <Providers>
-          <Navigation />
-          <main className='pt-16'>{children}</main>
-        </Providers>
+        {children}
       </body>
     </html>
   )
