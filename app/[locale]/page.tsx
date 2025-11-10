@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { getDictionary, Locale } from '@/lib/dictionaries'
 import { homePageData } from '../data/home'
+import { homePageDataUkUa } from '../data/home-uk-ua'
 import HeroSection from '../components/HeroSection'
 import FeatureHighlights from '../components/FeatureHighlights'
 import AchievementsSection from '../components/AchievementsSection'
@@ -48,6 +49,9 @@ export async function generateStaticParams() {
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params
   const dictionary = await getDictionary(locale as Locale)
+  
+  // Use Ukrainian content for Ukrainian locale, English content for others
+  const contentData = locale === 'uk-ua' ? homePageDataUkUa : homePageData
 
   return (
     <div className='min-h-screen' id='main-1'>
@@ -57,20 +61,20 @@ export default async function Home({ params }: HomeProps) {
       </div>
 
       {/* Page Content */}
-      <HeroSection data={homePageData.hero} />
-      <FeatureHighlights data={homePageData.featureHighlights} />
-      <AchievementsSection data={homePageData.achievements} />
-      <ChallengeSection data={homePageData.challenge} />
-      <CoachSection data={homePageData.coach} />
-      <StatsSection data={homePageData.stats} />
-      <ValuePropositionSection data={homePageData.valueProposition} />
-      <ServicesSection data={homePageData.services} />
-      <ProgramsSection data={homePageData.programs} />
-      <TestimonialsSection data={homePageData.testimonials} />
-      <PricingSection data={homePageData.pricing} />
-      <MissionSection data={homePageData.mission} />
-      <FAQSection data={homePageData.faq} />
-      <Footer data={homePageData.footer} />
+      <HeroSection data={contentData.hero} />
+      <FeatureHighlights data={contentData.featureHighlights} />
+      <AchievementsSection data={contentData.achievements} />
+      <ChallengeSection data={contentData.challenge} />
+      <CoachSection data={contentData.coach} />
+      <StatsSection data={contentData.stats} />
+      <ValuePropositionSection data={contentData.valueProposition} />
+      <ServicesSection data={contentData.services} />
+      <ProgramsSection data={contentData.programs} />
+      <TestimonialsSection data={contentData.testimonials} />
+      <PricingSection data={contentData.pricing} />
+      <MissionSection data={contentData.mission} />
+      <FAQSection data={contentData.faq} />
+      <Footer data={contentData.footer} />
     </div>
   )
 }
