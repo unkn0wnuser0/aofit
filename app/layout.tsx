@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'AO Fit - Personal Training & Fitness Coaching',
+  title: 'Anna Oblomova Fit - Personal Training & Fitness Coaching',
   description:
     'Transform your fitness journey with professional personal training and coaching. Achieve your goals with customized workout plans and expert guidance.',
   keywords: [
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     'fitness transformation',
     'health coaching',
   ],
-  authors: [{ name: 'AO Fit' }],
+  authors: [{ name: 'Anna Oblomova Fit' }],
   openGraph: {
-    title: 'AO Fit - Personal Training & Fitness Coaching',
+    title: 'Anna Oblomova Fit - Personal Training & Fitness Coaching',
     description:
       'Transform your fitness journey with professional personal training and coaching.',
     type: 'website',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AO Fit - Personal Training & Fitness Coaching',
+    title: 'Anna Oblomova Fit - Personal Training & Fitness Coaching',
     description:
       'Transform your fitness journey with professional personal training and coaching.',
   },

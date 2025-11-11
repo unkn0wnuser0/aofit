@@ -94,7 +94,7 @@ export function ContactSection({
         body: JSON.stringify({
           ...formData,
           timestamp: new Date().toISOString(),
-          source: 'AO Fit Website',
+          source: 'Anna Oblomova Fit Website',
           formStartTime,
           honeypot: '', // Anti-spam honeypot field
         }),

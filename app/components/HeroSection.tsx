@@ -1,7 +1,7 @@
-import { homePageData } from '../data/home';
+import { homePageData } from '../data/home'
 
 interface HeroSectionProps {
-  data: typeof homePageData.hero;
+  data: typeof homePageData.hero
 }
 
 export default function HeroSection({ data }: HeroSectionProps) {

@@ -10,9 +10,7 @@ export default function ValuePropositionSection({
   return (
     <section className='py-20 px-4'>
       <div className='max-w-4xl mx-auto text-center mb-16'>
-        <p className='text-lg text-muted-foreground mb-8'>
-          {data.description}
-        </p>
+        <p className='text-lg text-muted-foreground mb-8'>{data.description}</p>
       </div>
 
       <div className='max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8'>

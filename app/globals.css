@@ -221,3 +221,27 @@
 .error-message {
   color: hsl(var(--destructive));
 }
+
+/* Swiper Testimonials Styles */
+.testimonials-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 6px !important;
+  background-color: hsl(var(--primary) / 0.3) !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  background-color: hsl(var(--primary)) !important;
+  transform: scale(1.2) !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet:hover {
+  background-color: hsl(var(--primary) / 0.7) !important;
+}

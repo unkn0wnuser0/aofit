@@ -40,6 +40,7 @@ export interface Testimonial {
   id: string;
   quote: string;
   author: string;
+  photo: string;
 }
 
 export interface PricingPlan {
@@ -142,33 +143,33 @@ export interface HomePageData {
 export const homePageData: HomePageData = {
   hero: {
     title: "Elevate your fitness journey",
-    subtitle: "with AO",
+    subtitle: "with Anna Oblomova",
     tagline: "Stronger, Fitter, Happier",
-    spacedTitle: "S t a r t  w i t h  A O  F i t",
+    spacedTitle: "S t a r t  w i t h  A n n a  O b l o m o v a  F i t",
     ctaText: "Start Your Journey"
   },
   featureHighlights: [
     {
       id: "workout-duration",
-      icon: "⏱️",
+      icon: "clock",
       title: "Workout duration",
       hasExpander: true
     },
     {
       id: "training-style",
-      icon: "🏋️",
+      icon: "barbell",
       title: "Training style & experience",
       hasExpander: true
     },
     {
       id: "nutrition",
-      icon: "🥗",
+      icon: "apple",
       title: "Nutrition",
       hasExpander: true
     },
     {
       id: "motivation",
-      icon: "🎯",
+      icon: "target",
       title: "Stay motivated & win big",
       hasExpander: true
     }
@@ -176,7 +177,7 @@ export const homePageData: HomePageData = {
   achievements: {
     sectionNumber: "01",
     title: "What you'll achieve",
-    description: "Our personal training programs are built to help you move with intention and see real results.",
+    description: "Transform your fitness journey with structured programs designed to deliver measurable results and lasting change.",
     items: [
       { id: "sculpt", text: "Sculpt and define your body" },
       { id: "strength", text: "Build strength and confidence" },
@@ -193,12 +194,12 @@ export const homePageData: HomePageData = {
       { id: "nutrition", title: "Nutrition Guide" }
     ],
     ctaText: "Start Your Journey Today!",
-    note: "Personal coaching included in all AO Fit programs"
+    note: "Personal coaching included in all Anna Oblomova Fit programs"
   },
   coach: {
-    title: "Meet AO – Your Coach, Your Guide, Your Motivation",
+    title: "Meet Anna Oblomova – Your Coach, Your Guide, Your Motivation",
     bio: [
-      "Hey, I'm AO, your guide and motivator on this journey to your best self! I know what it's like to feel stuck or unsure of where to start, which is why I've created AO Fit – a space to help you get stronger, move with confidence, and truly love the process. With years of experience coaching people to reach their goals, I've designed programs that fit your lifestyle without taking over your life.",
+      "Hey, I'm Anna Oblomova, your guide and motivator on this journey to your best self! I know what it's like to feel stuck or unsure of where to start, which is why I've created Anna Oblomova Fit – a space to help you get stronger, move with confidence, and truly love the process. With years of experience coaching people to reach their goals, I've designed programs that fit your lifestyle without taking over your life.",
       "I believe fitness should empower you, not exhaust you. Let's train smart, nourish your body, and celebrate progress together. Ready to elevate your fitness? Let's get started! 💪"
     ],
     ctaText: "Get Started"
@@ -246,34 +247,34 @@ export const homePageData: HomePageData = {
   },
   services: {
     title: "Unlock Your Best Self",
-    subtitle: "What's waiting for you with AO Fit",
+    subtitle: "What's waiting for you with Anna Oblomova Fit",
     items: [
       {
         id: "training-plans",
         title: "Results-Driven Training Plans",
         description: "Choose from structured training programs or explore our session library to tailor workouts to your preferences. Achieve your goals at home, in the gym, with equipment, or without.",
-        icon: "🏋️‍♂️",
+        icon: "barbell",
         imagePosition: "right"
       },
       {
         id: "nutrition",
         title: "Elevate Your Nutrition",
         description: "Access a constantly updated library of recipes and meal plans tailored to your dietary preferences and goals—whether it's fat loss, muscle gain, or balanced living.",
-        icon: "🥗",
+        icon: "apple",
         imagePosition: "left"
       },
       {
         id: "community-support",
         title: "Community & Personalized Support",
         description: "Stay motivated with a global community of like-minded individuals and get personal support directly from our coaching team.",
-        icon: "👥",
+        icon: "users",
         imagePosition: "right"
       },
       {
         id: "progress-tracking",
         title: "Progress Tracking Made Simple",
         description: "Track your measurements, progress with every exercise, and compare before-and-after photos to see how far you've come.",
-        icon: "📊",
+        icon: "chart-bar",
         imagePosition: "left"
       }
     ]
@@ -290,14 +291,39 @@ export const homePageData: HomePageData = {
     items: [
       {
         id: "sarah-m",
-        quote: "AO Fit transformed not just my body, but my entire relationship with fitness. The personalized approach made all the difference!",
-        author: "Sarah M."
+        quote: "Anna Oblomova Fit transformed not just my body, but my entire relationship with fitness. The personalized approach made all the difference!",
+        author: "Sarah M.",
+        photo: "https://images.unsplash.com/photo-1494790108755-2616b332c1fc?w=300&h=300&fit=crop&crop=face"
+      },
+      {
+        id: "mike-j",
+        quote: "I never thought I could stick to a fitness routine, but Anna's approach made it sustainable and enjoyable. Down 30 pounds and feeling amazing!",
+        author: "Mike J.",
+        photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+      },
+      {
+        id: "elena-r",
+        quote: "The nutrition guidance combined with personalized workouts gave me results I never achieved on my own. Anna truly cares about your success!",
+        author: "Elena R.",
+        photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+      },
+      {
+        id: "david-l",
+        quote: "From complete beginner to running my first 5K - Anna's program adapted perfectly to my fitness level and goals. Highly recommend!",
+        author: "David L.",
+        photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+      },
+      {
+        id: "maria-s",
+        quote: "The community support and expert guidance made all the difference. I finally found a sustainable way to stay fit and healthy!",
+        author: "Maria S.",
+        photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop&crop=face"
       }
     ],
     ctaText: "Start Your Journey Today!"
   },
   pricing: {
-    title: "Choose your plan, and begin your journey with AO Fit",
+    title: "Choose your plan, and begin your journey with Anna Oblomova Fit",
     plans: [
       {
         id: "monthly",
@@ -334,9 +360,9 @@ export const homePageData: HomePageData = {
     items: [
       { id: "consultation", question: "Is there a complimentary consultation?" },
       { id: "results", question: "How quickly can I expect to see results?" },
-      { id: "gym", question: "Do I need a gym membership to train with AO Fit?" },
+      { id: "gym", question: "Do I need a gym membership to train with Anna Oblomova Fit?" },
       { id: "diet", question: "Do you offer plans for vegan/vegetarian diets?" },
-      { id: "levels", question: "What levels is AO Fit suitable for?" },
+      { id: "levels", question: "What levels is Anna Oblomova Fit suitable for?" },
       { id: "subscription", question: "How do I manage my subscription?" }
     ],
     contactTitle: "Don't see your questions?",
@@ -346,7 +372,7 @@ export const homePageData: HomePageData = {
     ]
   },
   footer: {
-    copyright: "© 2025 AO Fit. All rights reserved.",
+    copyright: "© 2025 Anna Oblomova Fit. All rights reserved.",
     links: [
       { id: "privacy", label: "Privacy Policy", href: "#" },
       { id: "terms", label: "Terms & Conditions", href: "#" },

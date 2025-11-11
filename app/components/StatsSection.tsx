@@ -1,7 +1,7 @@
 import { Stat } from '../data/home'
 
 interface StatsSectionProps {
-  data: Stat[];
+  data: Stat[]
 }
 
 export default function StatsSection({ data }: StatsSectionProps) {

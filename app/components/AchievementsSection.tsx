@@ -1,10 +1,12 @@
 import { homePageData } from '../data/home'
 
 interface AchievementsSectionProps {
-  data: typeof homePageData.achievements;
+  data: typeof homePageData.achievements
 }
 
-export default function AchievementsSection({ data }: AchievementsSectionProps) {
+export default function AchievementsSection({
+  data,
+}: AchievementsSectionProps) {
   return (
     <section className='py-16 px-4'>
       <div className='max-w-4xl mx-auto'>
@@ -13,12 +15,8 @@ export default function AchievementsSection({ data }: AchievementsSectionProps) 
             {data.sectionNumber}
           </span>
         </div>
-        <h2 className='text-4xl md:text-5xl font-bold mb-8'>
-          {data.title}
-        </h2>
-        <p className='text-lg mb-8 text-muted-foreground'>
-          {data.description}
-        </p>
+        <h2 className='text-4xl md:text-5xl font-bold mb-8'>{data.title}</h2>
+        <p className='text-lg mb-8 text-muted-foreground'>{data.description}</p>
 
         <div className='grid md:grid-cols-3 gap-6 mb-12'>
           {data.items.map((item) => (

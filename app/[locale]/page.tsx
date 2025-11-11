@@ -24,10 +24,12 @@ interface HomeProps {
   }>
 }
 
-export async function generateMetadata({ params }: HomeProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: HomeProps): Promise<Metadata> {
   const { locale } = await params
   const dictionary = await getDictionary(locale as Locale)
-  
+
   return {
     title: dictionary.hero.title,
     description: dictionary.hero.subtitle,
@@ -40,24 +42,24 @@ export async function generateMetadata({ params }: HomeProps): Promise<Metadata>
 
 // Generate static params for supported locales
 export async function generateStaticParams() {
-  return [
-    { locale: 'en-us' },
-    { locale: 'uk-ua' },
-  ]
+  return [{ locale: 'en-us' }, { locale: 'uk-ua' }]
 }
 
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params
   const dictionary = await getDictionary(locale as Locale)
-  
+
   // Use Ukrainian content for Ukrainian locale, English content for others
   const contentData = locale === 'uk-ua' ? homePageDataUkUa : homePageData
 
   return (
-    <div className='min-h-screen' id='main-1'>
+    <div className='min-h-screen' id='main-1' suppressHydrationWarning>
       {/* Language Switcher */}
-      <div className="fixed top-4 right-4 z-50 bg-background/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
-        <LanguageSwitcher currentLocale={locale as Locale} dictionary={dictionary} />
+      <div className='fixed top-4 right-4 z-50 bg-background/80 backdrop-blur-sm rounded-lg p-2 shadow-lg'>
+        <LanguageSwitcher
+          currentLocale={locale as Locale}
+          dictionary={dictionary}
+        />
       </div>
 
       {/* Page Content */}

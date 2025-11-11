@@ -10,10 +10,12 @@ interface LocaleLayoutProps {
   }>
 }
 
-export async function generateMetadata({ params }: LocaleLayoutProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: LocaleLayoutProps): Promise<Metadata> {
   const { locale } = await params
   const dictionary = await getDictionary(locale as Locale)
-  
+
   return {
     title: 'AO Fit - Personal Training & Fitness Coaching',
     description: dictionary.hero.subtitle,
@@ -43,9 +45,12 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
   }
 }
 
-export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
+export default async function LocaleLayout({
+  children,
+  params,
+}: LocaleLayoutProps) {
   const { locale } = await params
-  
+
   return (
     <Providers>
       <Navigation />

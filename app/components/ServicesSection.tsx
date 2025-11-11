@@ -1,7 +1,8 @@
 import { homePageData } from '../data/home'
+import TablerIcon, { IconName } from './ui/TablerIcon'
 
 interface ServicesSectionProps {
-  data: typeof homePageData.services;
+  data: typeof homePageData.services
 }
 
 export default function ServicesSection({ data }: ServicesSectionProps) {
@@ -14,9 +15,7 @@ export default function ServicesSection({ data }: ServicesSectionProps) {
         <h2 className='text-3xl md:text-4xl font-bold'>
           {data.title.split(' ')[2]} {data.title.split(' ')[3]}
         </h2>
-        <p className='text-lg text-muted-foreground mt-6'>
-          {data.subtitle}
-        </p>
+        <p className='text-lg text-muted-foreground mt-6'>{data.subtitle}</p>
       </div>
 
       <div className='max-w-6xl mx-auto space-y-16'>
@@ -35,7 +34,13 @@ export default function ServicesSection({ data }: ServicesSectionProps) {
               className={`bg-background p-8 rounded-lg ${service.imagePosition === 'left' ? 'md:order-1' : ''}`}
             >
               <div className='h-48 bg-muted/50 rounded-lg flex items-center justify-center'>
-                <span className='text-4xl'>{service.icon}</span>
+                <div className='w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center'>
+                  <TablerIcon
+                    name={service.icon as IconName}
+                    size={48}
+                    className='text-primary'
+                  />
+                </div>
               </div>
             </div>
           </div>

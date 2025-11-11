@@ -9,9 +9,7 @@ export default function Footer({ data }: FooterProps) {
     <footer className='py-12 px-4 border-t bg-muted/30'>
       <div className='max-w-6xl mx-auto'>
         <div className='text-center'>
-          <p className='text-sm text-muted-foreground mb-4'>
-            {data.copyright}
-          </p>
+          <p className='text-sm text-muted-foreground mb-4'>{data.copyright}</p>
           <div className='space-x-6'>
             {data.links.map((link) => (
               <a
