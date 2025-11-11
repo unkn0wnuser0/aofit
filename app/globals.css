@@ -30,6 +30,10 @@
     --chart-4: 42 100% 50%; /* warning */
     --chart-5: 0 100% 69%; /* danger */
     --radius: 0.5rem;
+    
+    /* Glassmorphism variables */
+    --glass-bg-alpha: 0.07;
+    --glass-border-alpha: 0.17;
   }
 
   .dark {

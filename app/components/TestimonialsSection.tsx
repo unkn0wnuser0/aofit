@@ -71,7 +71,13 @@ export default function TestimonialsSection({
             >
               {data.items.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className='bg-background p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full'>
+                  <div
+                    className='p-8 rounded-lg transition-shadow duration-300 h-full'
+                    style={{
+                      backgroundColor: `rgba(255, 255, 255, var(--glass-bg-alpha))`,
+                      border: `1px solid rgba(255, 255, 255, var(--glass-border-alpha))`,
+                    }}
+                  >
                     <div className='flex gap-6 h-full'>
                       {/* Photo */}
                       <div

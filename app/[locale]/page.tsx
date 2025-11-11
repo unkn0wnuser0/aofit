@@ -16,6 +16,7 @@ import PricingSection from '../components/PricingSection'
 import MissionSection from '../components/MissionSection'
 import FAQSection from '../components/FAQSection'
 import Footer from '../components/Footer'
+import PeopleCarousel from '../components/PeopleCarousel'
 import { LanguageSwitcher } from '../components/ui/LanguageSwitcher'
 
 interface HomeProps {
@@ -69,6 +70,7 @@ export default async function Home({ params }: HomeProps) {
       <ChallengeSection data={contentData.challenge} />
       <CoachSection data={contentData.coach} />
       <StatsSection data={contentData.stats} />
+      <PeopleCarousel />
       <ValuePropositionSection data={contentData.valueProposition} />
       <ServicesSection data={contentData.services} />
       <ProgramsSection data={contentData.programs} />

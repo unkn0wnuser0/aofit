@@ -358,12 +358,36 @@ export const homePageData: HomePageData = {
   faq: {
     title: "Still have questions?",
     items: [
-      { id: "consultation", question: "Is there a complimentary consultation?" },
-      { id: "results", question: "How quickly can I expect to see results?" },
-      { id: "gym", question: "Do I need a gym membership to train with Anna Oblomova Fit?" },
-      { id: "diet", question: "Do you offer plans for vegan/vegetarian diets?" },
-      { id: "levels", question: "What levels is Anna Oblomova Fit suitable for?" },
-      { id: "subscription", question: "How do I manage my subscription?" }
+      { 
+        id: "consultation", 
+        question: "Is there a complimentary consultation?",
+        answer: "Yes! I offer a free 30-minute consultation call to all new clients. During this session, we'll discuss your fitness goals, current lifestyle, any limitations or concerns you might have, and determine if my coaching approach is the right fit for you. This consultation allows us to create a personalized roadmap for your success and ensures you feel confident about starting your fitness journey with me. You can book your complimentary consultation directly through our website or by contacting our support team."
+      },
+      { 
+        id: "results", 
+        question: "How quickly can I expect to see results?",
+        answer: "Results vary depending on your starting point, goals, and consistency, but most clients begin noticing positive changes within 2-3 weeks. You'll likely feel stronger and more energetic first, followed by visible physical changes around 4-6 weeks. Significant transformations typically occur within 8-12 weeks of consistent training and nutrition adherence. Remember, sustainable results take time - I focus on building lasting habits rather than quick fixes. Your dedication to the program, combined with proper nutrition and adequate rest, will determine how quickly you achieve your goals."
+      },
+      { 
+        id: "gym", 
+        question: "Do I need a gym membership to train with Anna Oblomova Fit?",
+        answer: "Not at all! My programs are designed to be flexible and adaptable to your environment. I offer both gym-based and home workout options, so you can train wherever you're most comfortable. For home workouts, you'll need minimal equipment - usually just resistance bands, dumbbells, and a yoga mat. Many exercises use bodyweight only. If you prefer gym training, I'll create programs that utilize available equipment. The most important thing is consistency, not location. I'll work with whatever setup you have to ensure you get an effective, challenging workout."
+      },
+      { 
+        id: "diet", 
+        question: "Do you offer plans for vegan/vegetarian diets?",
+        answer: "Absolutely! I have extensive experience working with clients following various dietary preferences, including vegan, vegetarian, pescatarian, and other plant-based lifestyles. All nutrition plans are completely customized to your dietary requirements, food preferences, and cultural background. I'll ensure you're getting adequate protein, essential nutrients, and energy to support your fitness goals while respecting your dietary choices. Whether you're plant-based for health, ethical, or environmental reasons, I'll create a sustainable and enjoyable meal plan that fits your lifestyle perfectly."
+      },
+      { 
+        id: "levels", 
+        question: "What levels is Anna Oblomova Fit suitable for?",
+        answer: "My programs are designed for all fitness levels, from complete beginners to advanced athletes. I believe everyone deserves personalized attention regardless of their starting point. For beginners, I focus on building proper form, establishing healthy habits, and gradually increasing intensity. Intermediate clients work on breaking plateaus and refining techniques. Advanced clients receive complex programming to reach peak performance. Each program is completely customized - I assess your current fitness level, experience, and goals to create the perfect challenge that pushes you without overwhelming you."
+      },
+      { 
+        id: "subscription", 
+        question: "How do I manage my subscription?",
+        answer: "Managing your subscription is simple and transparent. You'll receive access to a personal client portal where you can view your current plan, update payment information, and modify your subscription at any time. You can upgrade, downgrade, pause, or cancel your subscription with just a few clicks - no lengthy phone calls or complicated processes. All billing is handled securely, and you'll receive clear invoices and reminders. If you need any assistance with your account, our support team is available via email or chat to help you with any subscription-related questions or changes."
+      }
     ],
     contactTitle: "Don't see your questions?",
     contactLinks: [
